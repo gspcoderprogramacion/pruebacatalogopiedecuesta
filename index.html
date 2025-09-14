@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Catálogo</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background: #f4f4f4;
+      color: #333;
+    }
+    header {
+      background: #0073e6;
+      color: white;
+      padding: 1rem;
+      text-align: center;
+    }
+    h1 {
+      margin: 0;
+    }
+    .catalogo {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      gap: 20px;
+      padding: 20px;
+      max-width: 1200px;
+      margin: auto;
+    }
+    .item {
+      background: white;
+      border-radius: 8px;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+      overflow: hidden;
+      text-align: center;
+      transition: transform 0.2s;
+    }
+    .item:hover {
+      transform: scale(1.05);
+    }
+    .item img {
+      width: 100%;
+      height: 150px;
+      object-fit: cover;
+    }
+    .info {
+      padding: 10px;
+    }
+    footer {
+      text-align: center;
+      padding: 1rem;
+      background: #333;
+      color: white;
+      margin-top: 20px;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Catálogo de Productos</h1>
+  </header>
+
+  <section class="catalogo">
+    <div class="item">
+      <img src="https://via.placeholder.com/200x150" alt="Producto 1">
+      <div class="info">
+        <h2>Producto 1</h2>
+        <p>$10.00</p>
+      </div>
+    </div>
+    <div class="item">
+      <img src="https://via.placeholder.com/200x150" alt="Producto 2">
+      <div class="info">
+        <h2>Producto 2</h2>
+        <p>$15.00</p>
+      </div>
+    </div>
+    <div class="item">
+      <img src="https://via.placeholder.com/200x150" alt="Producto 3">
+      <div class="info">
+        <h2>Producto 3</h2>
+        <p>$20.00</p>
+      </div>
+    </div>
+    <div class="item">
+      <img src="https://via.placeholder.com/200x150" alt="Producto 4">
+      <div class="info">
+        <h2>Producto 4</h2>
+        <p>$25.00</p>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 Mi Catálogo</p>
+  </footer>
+</body>
+</html>
